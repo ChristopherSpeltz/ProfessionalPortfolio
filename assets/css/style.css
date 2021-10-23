@@ -1,8 +1,8 @@
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     /* box-sizing: border-box; */
-    background-color: white;
+    /* background-color: white; */
 }
 body {
     /* body font */
@@ -15,16 +15,17 @@ body, html {
 
 /* apply styles to <header> */
 header {
-    padding: 20px 35px;
+    padding: 10px 15px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    background-color: black;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: black;
+    color:white;
     margin: 0;
     /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
 }
@@ -45,8 +46,9 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
+header nav ul li {
     padding: 10px 15px;
+    justify-content: space-between;
     font-weight: lighter;
     font-size: 1.55vw;
     /* text-shadow: 0 0 10px rgba(0, 0, 0, 0.5); */
@@ -78,10 +80,24 @@ header nav ul li a {
     position: relative;
 }
 
+.about-section {
+    font-size: 25px;
+    color: black;
+    /* border: 3px solid; */
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+}
+
+.about-me-image {
+    position: relative;
+}
+
 .proj-title {
     font-size: 48px;
     color: black;
-    border: 3px solid;
+    /* border: 3px solid; */
     padding-bottom: 20px;
     text-align: center;
     margin: 0 auto 35px auto;
@@ -100,11 +116,29 @@ header nav ul li a {
     justify-content: space-around;
 }
 
+.project1 {
+    margin: 20px;
+    color: black;
+    padding: 40px;
+    border: solid black 3px;
+    text-align: center;
+    /* margin: 0 auto; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project1 img{
+    width: 100%;
+    /* padding: 20px; */
+}
+
 .project {
     margin: 20px;
     color: black;
     flex: 1;
     border: solid black 3px;
+    padding: 20px;
 }
 
 .project img{
@@ -130,6 +164,22 @@ margin-bottom: 15px;
 font-size: 17px;
 }
 
-.flex-row {
-    display: flex;
+.flexing {
+display: flex;
 }
+
+.getintouch a {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+align-items: center;
+padding: 50px 40px;
+font-weight: lighter;
+font-size: 1.55vw;
+text-align: center;
+width:max-content;
+}
+
+/* #getintouch {
+    display: inline;
+} */
